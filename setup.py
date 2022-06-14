@@ -17,7 +17,7 @@ setup(
     # 作者的邮箱
     author_email='15029670296@163.com',
     # 写上项目的地址，比如你开源的地址开源写博客地址，也开源写GitHub地址，自定义的官网地址等等。
-    url='https://codeup.aliyun.com/5f3f374f6207a1a8b17f933f/oasis-common/log.git',
+    url='https://github.com/guardstrikelab/oasis-log.git',
     # 指定包名，即你需要打包的包名称，要实际在你本地存在哟，它会将指定包名下的所有"*.py"文件进行打包哟，但不会递归去拷贝所有的子包内容。
     # 综上所述，我们如果想要把一个包的所有"*.py"文件进行打包，应该在packages列表写下所有包的层级关系哟~这样就开源将指定包路径的所有".py"文件进行打包!
     packages=['utils'],
