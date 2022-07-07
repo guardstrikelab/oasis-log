@@ -22,7 +22,6 @@ if os.path.exists("/.dockerenv"):
 
     def get_task_id():
         task_id = None
-        print("running_task_key:{}".format(running_task_key))
         if not running_task_key:
             return task_id
         task_id = redisUtils.get(running_task_key)

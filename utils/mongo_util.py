@@ -70,7 +70,10 @@ class MongoTaskResult:
 
     def find_user_id_from_job(self, task_id):
         job = self.session.job.find_one({"task_list.id": task_id})
-        return job["usr_id"]
+        if job:
+           return job["usr_id"]
+        else:
+            return None
 
     def find_user_info(self, usr_id):
         user = self.session.users.find_one({"id": usr_id})
